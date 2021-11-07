@@ -20,9 +20,9 @@
                 latlng: new kakao.maps.LatLng(33.451393, 126.570738)
             }
         ];
-       식으로 저장된 것을
-       지도 표기해줌
-       latlng: new kakao.maps.LatLng(33.451393, 126.570738) 은 위도 경도 인데.
+    //   식으로 저장된 것을
+      // 지도 표기해줌
+       //latlng: new kakao.maps.LatLng(33.451393, 126.570738) 은 위도 경도 인데.
        
             // 주소-좌표 변환 객체를 생성합니다
             var geocoder = new kakao.maps.services.Geocoder();

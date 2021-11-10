@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<!-- Created By CodingLab - www.codinglabweb.com -->
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+   <!----<title>Login Form Design | CodeLab</title>---->
+    <link rel="stylesheet" href="join_style.css">
+
+    <script>
+      $(document).ready(function () {
+        showArticles();
+        });
+      function openClose() {
+        if ($("#list-items").css("display") == "block") {
+        $("#list-items").hide();
+        $("#btn-list-items").text("개인정보 열기");
+        } else {
+        $("#list-items").show();
+        $("#btn-list-items").text("개인정보 닫기");
+        }
+        }
+        
+    </script>
+    
+    <title>노른자|회원가입</title>
+    
+  </head>
+  <body>
+    <div class="wrapper">
+      <input type="checkbox" id="nav_btn" hidden>
+      <label for="nav_btn" class="menu-btn">
+        <i class="fas fa-user"></i>
+        <!-- <i class="fas fa-times"></i> -->
+      </label>
+      <nav id="sidebar">
+        <!-- <div class="title"><img src=imge/logo_02.gif></div> -->
+
+        <button onclick="openClose()" id="btn-list-items" type="button" class="btn btn-info">개인정보 열기</button>
+        <ul class="list-items" id="list-items"style="display:none">
+          <!-- 입력창을 어떻게해줘야 db 넣기가 편한지 모름.. -->
+            <li>로그인 해주세요!<button id="login_btn">로그인</button></li>
+            <li>박 결님 (만 32세) </li>
+            <li>관할 구청 : 은평구</li>
+            <li>보호자 : 박현정 (복지사)</li>
+
+            <li>내가 봤던 페이지 확인</li>
+            <div id="nav_search_box">
+
+                <a href="#">검색기록/길이확인중</a><br>
+                <a href="#">검색기록/길이확인중</a><br>
+                <a href="#">검색기록/길이확인중</a><br>
+                <a href="#">검색기록/길이확인중</a><br>
+                <a href="#">검색기록/길이확인중</a><br>
+                <a href="#">검색기록/길이확인중</a><br>
+                <a href="#">검색기록/길이확인중</a><br>
+                <a href="#">검색기록/길이확인중</a><br>
+            </div>  
+        </ul>
+        <div id="nav-mainbtn">
+          <button href="#" class="btn btn-outline-light">금융</button>
+          <button href="#" class="btn btn-outline-light">사회복지</button>
+          <button href="#" class="btn btn-outline-light">의료</button>
+          <button href="#" class="btn btn-outline-light">여가</button>
+        </div>
+      </nav>
+    </div>
+
+    <div class="join_box">
+      <div class="title"><img src="img/logo_02.gif" id="logo">보호자회원가입</div>
+      <form action="#">
+        
+        <div class="field" style="display: flex;">
+          <input type="text" required>
+          <label>아이디@주소</label>
+          <input type="submit" value="중복조회하기" id="search_btn" >
+        </div>
+        <div class="field">
+          <input type="password" required>
+          <label>비밀번호</label>
+        </div>
+        <div class="field">
+          <input type="password-check" required>
+          <label>비밀번호 확인</label>
+        </div>
+        <div class="field">
+          <input type="name" required>
+          <label>이름</label>
+        </div>
+        <div class="field">
+            <input type="adress" required>
+            <label>주소</label>
+          </div>
+<!-- 대상자 입력부분 -->
+        <div class="head" >
+            <h3>대상자 입력</h3>
+            <button class="btn alert-secondary" id="leadme">대상자 추가 </button>
+        </div>
+        <div id="partners">
+            <div class="em" id="relationship">
+                <select class="form-control form-control-md">
+                <option>가족</option>
+                <option>복지사</option>
+                <option>그외</option>
+                </select>
+            <div class="field"id="partner-id">
+                <input type="em_member" required style="width:200px;">
+                <label>대상자아이디</label>
+            </div>
+          </div>
+        </div>
+            <div class="field">
+              <input type="submit" value="회원가입">
+            </div>
+      </form>
+        
+
+
+      <br>
+        <!-- <div id="sizing">
+            <a href='#' class='btn-floating'><div><span style="font-size: 12;">가</span>+</div></a> 
+            <br><br>
+            <a href='#' class='btn-floating'><div><span style="font-size: 5;">가</span>-</div></a>
+        </div> -->
+    </div>
+
+    <script>
+      $(function() {
+        $("button").on("click",function(){
+          $("#partners").append(`<div class="em" id="relationship">
+            <select class="form-control form-control-md">
+            <option>가족</option>
+            <option>복지사</option>
+            <option>그외</option>
+            </select>
+          <div class="field"id="partner-id">
+            <input type="em_member" required style="width:200px;">
+            <label>대상자아이디</label>`);
+        });
+      });
+
+
+    </script>
+  </body>
+</html>

@@ -57,7 +57,7 @@
   position: relative;
   right: -3px;
   top: 0;
-  background-color: #eed153;
+  background-color: #FCD13A;;
   text-align: center;
   line-height: 50px;
   color: #fff;
@@ -69,7 +69,7 @@
   text-align: center;
 }
 #search-box .icon:hover{
-  background-color: #f7b63c;
+  background-color: #FCD13A;;
   font-size: 30px;
   text-shadow: 4px 2px 2px gray;
 }
@@ -86,6 +86,30 @@
   margin-top:10px;
 }
 
+#sum{
+  width: auto;
+  height: 430px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  margin:auto;
+}
+
+#sum::-webkit-scrollbar {
+  width: 20px;
+}
+
+#sum::-webkit-scrollbar-thumb {
+  background-color: white;
+  border-radius: 10px;
+  background-clip: padding-box;
+  border: 2px solid transparent;
+}
+
+#sum::-webkit-scrollbar-track {
+  background-color: #FCD13A;
+  border-radius: 10px;
+  box-shadow: inset 0px 0px 7px #FCD13A;
+}
 
 
 /* ///////////nav.css////////////
@@ -103,7 +127,7 @@
   position: absolute;
   left: 30px;
   top: 30px;
-  background: #eed153;
+  background: #FCD13A;;
   color: #333;
   height: 65px;
   width: 65px;
@@ -131,7 +155,7 @@
 }
 #sidebar{
   position: fixed;
-  background: #eed153;
+  background: #FCD13A;
   height: 100%;
   width: 25%;
   overflow: hidden;
@@ -294,7 +318,9 @@
   height: auto;
   background-color: #FCD13A;
   font-weight: bold;
-  font-size: 30px;
+  font-size: 40px;
+  padding:10px;
+  text-align: center;
 }
 
 .dropdown {
@@ -372,11 +398,11 @@
     margin:20px 20px;
   }
   #card_case{
-    display: flex;
+    display:flex;
     width: 80%;
     height: 600px;
-    margin: 0 auto;
-    overflow-y: scroll;
+    margin: auto;
+    
 
   }
   .card{

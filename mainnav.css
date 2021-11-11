@@ -5,6 +5,7 @@
   margin: 0;
   padding: 0;
   font-family: 'Poppins', sans-serif;
+  left: -10px;
 }
 
 
@@ -32,7 +33,7 @@
 #case #search-box{
   position: relative;
   height: 50px;
-  max-width:380px;
+  max-width:700px;
   margin: auto;
   box-shadow: 0 5px 10px rgba(0, 0, 0, .25);
   border-radius: 25px;
@@ -54,10 +55,9 @@
 #search-box .icon{
   width: 20%;
   height: 50px;
-  position: relative;
-  right: -3px;
+  /* position: relative; */
   top: 0;
-  background-color: #FCD13A;;
+  background-color: #ffc944;;
   text-align: center;
   line-height: 50px;
   color: #fff;
@@ -69,29 +69,29 @@
   text-align: center;
 }
 #search-box .icon:hover{
-  background-color: #FCD13A;;
+  background-color: #ffc944;;
   font-size: 30px;
   text-shadow: 4px 2px 2px gray;
 }
 
-.content{
+.contentment{
   margin: 100px auto;
   text-align: center;
   
 }
-.content button{
-  width: 70%;
-  height: 20%;
+.contentment button{
+  width: 200px;
+  height: 200px;
   box-shadow: #333;
-  margin-top:10px;
+  margin:0 0 10px 10px;
 }
 
 #sum{
   width: auto;
-  height: 430px;
+  height: auto;
   overflow-y: auto;
   overflow-x: hidden;
-  margin:auto;
+  margin :50px 50px;
 }
 
 #sum::-webkit-scrollbar {
@@ -106,9 +106,9 @@
 }
 
 #sum::-webkit-scrollbar-track {
-  background-color: #FCD13A;
+  background-color: #ffc944;
   border-radius: 10px;
-  box-shadow: inset 0px 0px 7px #FCD13A;
+  box-shadow: inset 0px 0px 7px #ffc944;
 }
 
 
@@ -124,10 +124,10 @@
   z-index: 9998;
 }
 .wrapper .menu-btn{
-  position: absolute;
+  position: fixed; 
   left: 30px;
   top: 30px;
-  background: #FCD13A;;
+  background: #ffc944;;
   color: #333;
   height: 65px;
   width: 65px;
@@ -155,7 +155,7 @@
 }
 #sidebar{
   position: fixed;
-  background: #FCD13A;
+  background: #ffc944;
   height: 100%;
   width: 25%;
   overflow: hidden;
@@ -168,7 +168,7 @@
 }
 #sidebar .list-items{
   position: relative;
-  background: #eed153;
+  background: #ffc944;
   width: 100%;
   height: 100%;
   list-style: none;
@@ -189,7 +189,7 @@
   outline: none;
     }
 #login_btn:hover {
-  background-color: #f5c732;
+  background-color: #ffc944;
   box-shadow: 0px 15px 20px rgba(229, 186, 46, 0.4);
   color: #fff;
   transform: translateY(-7px);
@@ -229,7 +229,7 @@
 
 }
 #btn-list-items{
-  margin: 100px 0 20px 10px;
+  margin: 100px 50px 20px 10px;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
 }
 
@@ -259,25 +259,25 @@
 
 }
 
-#finacial {
+#div1 {
   width: auto;
-  height: 650px;
+  height: auto;
   text-align: center;
 }
 
 
-#health {
+#div2 {
   width: auto;
-  height: 600px;
+  height: auto;
   text-align: center;
 
 }
 
 
 
-#leisure {
+#div3 {
   width: auto;
-  height: 600px;
+  height: a;
   text-align: center;
 
 
@@ -289,6 +289,7 @@
   height: 430px;
   overflow-y: auto;
   overflow-x: hidden;
+  margin:50px 50px;
   
 
 }
@@ -305,9 +306,9 @@
 }
 
 .contents::-webkit-scrollbar-track {
-  background-color: #FCD13A;
+  background-color: #ffc944;
   border-radius: 10px;
-  box-shadow: inset 0px 0px 7px #FCD13A;
+  box-shadow: inset 0px 0px 7px #ffc944;
 }
 
 
@@ -322,21 +323,21 @@
 .dropdown {
   position: relative;
   top: 15px;
-  left: -90px;
+  left: -70px;
   text-align: center;
 }
 
 .reset_btn {
   position: relative;
   top: -10px;
-  right: -150px;
+  margin-left:300px;
 }
 
 
 
 .cards {
   display: inline-block;
-  width: 320px;
+  width: 300px;
   height: auto;
   margin:10px;
   line-height: 150%;
@@ -354,6 +355,7 @@
 
 .card-footer {
   margin-top: -20px;
+  font-size: 14px;
 
 }
 
@@ -361,13 +363,14 @@
 @media all and (min-width:381px) and (max-width:992px) {
   #sidebar{
     position: fixed;
-    background: #eed153;
+    background: #ffc944;
     height: 100%;
     width: 50%;
     overflow: hidden;
     left: -60%;
     transition: all 0.3s ease;
   }
+  
 
 }
 
@@ -399,7 +402,6 @@
     height: 600px;
     margin: auto;
     
-
   }
   .card{
     width:300px;
@@ -408,6 +410,7 @@
     text-align: center;
     font-size: small;
     }
+  
 
     
     
@@ -423,19 +426,19 @@
 
   #sidebar{
     position: fixed;
-    background: #eed153;
+    background: #ffc944;
     height: 100%;
-    width: 60%;
+    width: 50%;
     overflow: hidden;
     left: -60%;
     transition: all 0.3s ease;
   }
 
 .wrapper .menu-btn{
-  position: absolute;
+  position:  fixed;
   left: 10px;
   top: 10px;
-  background: #eed153;
+  background: #ffc944;
   color: #333;
   height: 50px;
   width: 50px;
@@ -451,7 +454,7 @@
 #sidebar .list-items li{
   font-size: 10px;
   font-weight: 700;
-padding-left: 5px;
+padding-left: 20px;
 line-height: 25px;}
 #sidebar img{
   margin-left: 0;
@@ -460,7 +463,7 @@ line-height: 25px;}
 #sidebar .title{
   line-height: 5px;
   text-align: center;
-  background: #eed153;}
+  background: #ffc944;}
 #login_btn{
   margin-left: 10px;
   width: 75px;
@@ -500,6 +503,18 @@ line-height: 25px;}
   margin: 5px;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.25);
 }
+#case #search-box{
+  position: relative;
+  height: 50px;
+  width:400px;
+  top:-20px;
+  left: -80px;
+  margin: auto;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, .25);
+  border-radius: 25px;
+  display: flex;
+
+}
 }
 
 
@@ -529,7 +544,28 @@ line-height: 25px;}
     right: -110px;
 }
 
+.wrapper .menu-btn{
+  position:  fixed;
+  left: 10px;
+  top: 100px;
+  background: #ffc944;
+  color: #333;
+  height: 50px;
+  width: 50px;
+  z-index: 9999;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+#nav_btn:checked ~ .menu-btn{
+  top: 10px;
+  background-color: coral;
 
+}
 
 .card {
 
@@ -539,4 +575,53 @@ line-height: 25px;}
 
 
 }
+#case #search-box{
+  position: relative;
+  height: 50px;
+  width:300px;
+  top:0;
+  left: 0;
+  margin: auto;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, .25);
+  border-radius: 25px;
+  display: flex;
+
+}
+.contentment{
+  margin: 20px auto;
+  text-align: center;
+}
+.contentment button{
+  width: 70%;
+  height: 20%;
+  box-shadow: #333;
+  margin-top:10px;
+}
+}
+@media screen and (min-width:1034px){
+  #case #search-box{
+    position: relative;
+    height: 50px;
+    width:700px;
+    top:-20px;
+    left: -150px;
+    margin: auto;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .25);
+    border-radius: 25px;
+    display: flex;
+  
+  }
+  #nav-mainbtn{
+    margin: 0 auto;
+    width: 150px;
+  }
+  #nav-mainbtn .btn{
+    font-weight: 700;
+    font-size: 25px;
+    width: 150px;
+    height: 150px;
+    margin: 5px ;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.25);
+  }
+
 }

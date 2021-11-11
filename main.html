@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    
+    <script type="text/javascript" src="&lt;/script'&gt;http://code.jquery.com/jquery-latest.js"></script>  
     
   <script>
     $(document).ready(function () {
@@ -29,6 +29,13 @@
         $("#btn-list-items").text("개인정보 닫기");
       }
     }
+    ///////버튼 Js 코드 다다다 나옴////////////////
+    
+     function fnMove(seq){ 
+        var offset = $("#div" + seq).offset();
+        $('html, body').animate({
+        scrollTop : offset.top-60/*스크롤된 위치에서 상단네비 길이만큼 -60*/}, 400/*스크롤시간*/); } 
+    
   </script>
 
 </head>
@@ -66,10 +73,10 @@
         </div>
       </ul>
       <div id="nav-mainbtn">
-        <button href="#" class="btn btn-outline-light">금융</button>
-        <button href="#" class="btn btn-outline-light">사회복지</button>
-        <button href="#" class="btn btn-outline-light">의료</button>
-        <button href="#" class="btn btn-outline-light">여가</button>
+        <button onClick="fnMove('1')" class="btn btn-outline-light">금융</button>
+        <button id="#" class="btn btn-outline-light">사회복지</button>
+        <button onClick="fnMove('2')" class="btn btn-outline-light">의료</button>
+        <button onClick="fnMove('3')" class="btn btn-outline-light">여가</button>
       </div>
     </nav>
   </div>
@@ -89,48 +96,55 @@
       </div>
     </div>
   </div>
-  <div class="content">
-    <button type="button" class="btn btn-outline-success "><h3>금융</h3><p>금융 복지 정보</button>
-    <button type="button" class="btn btn-outline-success "><h3>사회복지</h3><p>복지회관정보</button>
-    <button type="button" class="btn btn-outline-success "><h3>의료</h3><p>가까운의료시설위치</button>
-    <button type="button" class="btn btn-outline-success "><h3>여가</h3><p>노인정, 운동동호회</button>
+  <div class="contentment">
+    <button type="button" onClick="fnMove('1')" class="btn btn-outline-success " ><h3>금융</h3><p>금융 복지 정보</button>
+    <button type="button"id="#" class="btn btn-outline-success " ><h3>사회복지</h3><p>복지회관정보</button>
+    <button type="button" onClick="fnMove('2')" class="btn btn-outline-success " ><h3>의료</h3><p>가까운의료시설위치</button>
+    <button type="button" onClick="fnMove('3')" class="btn btn-outline-success " ><h3>여가</h3><p>노인정, 운동동호회</button>
 
   </div>
   <div class="top">
       <img src="img\한눈에보기_web.png"></div>
- <div id="sum"><div id="card_case">
-    
-    <div class="card">
-      <h5 class="card-header">Featured</h5>
-      <div class="card-body">
-        <h5 class="card-title">Special title treatment</h5>
-        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
-      </div>
-    </div>
-    <div class="card">
-      <h5 class="card-header">Featured</h5>
-      <div class="card-body">
-        <h5 class="card-title">Special title treatment</h5>
-        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
-      </div>
-    </div>
-    <div class="card">
-      <h5 class="card-header">Featured</h5>
-      <div class="card-body">
-        <h5 class="card-title">Special title treatment</h5>
-        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
-      </div>
-    </div>
+ <div id="sum">
+    <div class="contents">
+        <div class="cards">
+            <header class="card-header">
+                <p class="card-header-title">
+                    금융복지 제목
+                </p>
+                <button class="card-header-icon" aria-label="more options">
+                    <span class="icon">
+                        <i class="fas fa-angle-down" aria-hidden="true"></i>
+                    </span>
+                </button>
+            </header>
+            <div class="card-content">
+                <div class="content">
+                    <p>금융복지 내용 요약<br>
+                        금융복지 내용 요약</p><br>
+                    <p>문의처:02-6283-0268</p>
+                    <p>지원주기:수시</p>
+                    <p>제공유형:프로그램/서비스(서비스)</p>
+                    <p>담당부처: 보건복지부 아동권리과</p>
 
-  </div></div>
+
+                </div>
+            </div>
+            <footer class="card-footer">
+                <a href="#" class="card-footer-item">즐겨찾기</a>
+                <a href="#" class="card-footer-item">더보기</a>
+                <a href="#" class="card-footer-item">신청하기</a>
+            </footer>
+        </div>
+    </div> 
+
+
+ </div>
   
 <!-- 여기서부터 본격적인 복지 정보들  -->
   <div id="information">
     <!---금융복지 -->
-    <div id="finacial">
+    <div id="div1">
        
             <div class="top">
                 <img src="img\금융_web.png">
@@ -432,7 +446,7 @@
 </div>
 </div>
    <!---의료복지-->
-    <div id="health">
+    <div id="div2">
         <header>
             <div class="top">
                 <img src="img\의료_web.png">
@@ -499,7 +513,7 @@
     </div>
 </div>
     <!---여가/문화복지 헤더-->
-    <div id="leisure">
+    <div id="div3">
         <header>
             <div class="top">
                 <img src="img\여가문화_web.png">

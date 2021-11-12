@@ -41,11 +41,19 @@
 </head>
 
 <body>
-
+    <!-- <button onClick="fnMove('3')" class="btn btn-outline-light">여가</button> -->
+    <div onclick="fnMove('4')" class="home_btn">
+        <i class="bi bi-house-door-fill"></i> 
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-door-fill" viewBox="0 0 16 16">
+          <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5z"/>
+        </svg></div><!--홈버튼 플로팅버튼-->
+    
   <div class="wrapper">
     <input type="checkbox" id="nav_btn" hidden>
     <label for="nav_btn" class="menu-btn">
       <i class="fas fa-user"></i>
+   
+      
       <!-- <i class="fas fa-times"></i> -->
     </label>
     <nav id="sidebar">
@@ -77,11 +85,13 @@
         <button id="#" class="btn btn-outline-light">사회복지</button>
         <button onClick="fnMove('2')" class="btn btn-outline-light">의료</button>
         <button onClick="fnMove('3')" class="btn btn-outline-light">여가</button>
+        
       </div>
     </nav>
   </div>
 
   <!-- /////여기부터메인입니다///// -->
+<div id="div4">  
   <div id="header">
     <img src="img/web.jpg">
   </div>
@@ -140,8 +150,11 @@
 
 
  </div>
+</div>
+</div>
   
 <!-- 여기서부터 본격적인 복지 정보들  -->
+
   <div id="information">
     <!---금융복지 -->
     <div id="div1">

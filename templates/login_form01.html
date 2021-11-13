@@ -5,6 +5,11 @@
     <meta charset="utf-8">
    <!----<title>Login Form Design | CodeLab</title>---->
    <link rel="stylesheet" href="../static/login_style02.css">
+
+   <script src="../static/logon_form01.js"></script>
+   <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script>
     <title>노른자|로그인</title>
   </head>
   <body>
@@ -19,7 +24,7 @@
             <img src="../static/img/kakao.png" id="kakao_logo" style="left: 15px;
             width: 30px;
             position: absolute;"> 
-          <input type="submit" value="카카오톡으로 로그인하기" id="kakao_login" onclick="alert('미구현')">
+          <input type="submit" value="카카오톡으로 로그인하기" id="kakao_login" onclick="kakaoLogin()">
         </div>
         <div class="signup-link">회원가입안하셨어요? <a href="#">가입하기!</a></div>
       </div> 

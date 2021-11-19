@@ -5,6 +5,7 @@
   margin: 0;
   padding: 0;
   font-family: 'Poppins', sans-serif;
+  
 }
 
 
@@ -74,24 +75,18 @@
 }
 
 .contentment{
-  margin: 50px auto 30px;
+  margin: 100px auto;
   text-align: center;
   
 }
-
 .contentment button{
   width: 200px;
   height: 200px;
   box-shadow: #333;
-  background-color: #fff;
-  border: #333 solid 1px;
-  margin:105px 0 105px 10px;
+  margin:0 0 10px 10px;
 }
-.contentment button:hover{
-  background-color: #ffc944;
-  border: #ffc944 3px;
-  border-radius: 50px;
-}
+
+
 
 #sum{
   width: auto;
@@ -164,20 +159,23 @@
 
 
 .home_btn svg{
-  position: fixed;
-  bottom:5%;
-  right: 3%;
-  float: left;
-  background-color: #ffc944;
-  border:1px solid white;
-  z-index: 99999;
   padding: 5px;
-  border-radius: 5px;
   width:65px;
   height:65px;
-  display: flex;
+  background-color: #ffc944;
+  border:1px solid white;
+  border-radius: 5px;
   cursor: pointer;
-  justify-content: center;
+}
+
+.home_btn{
+  width:65px;
+  height: 65px;
+  position: fixed;
+  display: flex;
+  bottom:60px;
+  right:30px;
+  
 }
 
 #sidebar{
@@ -253,27 +251,10 @@
 #nav_search_box a{
   margin-left: 10px;
   width: 100px;
-}
 
-#nav_search_box::-webkit-scrollbar {
-  width: 20px;
 }
-
-#nav_search_box::-webkit-scrollbar-thumb {
-  background-color: white;
-  border-radius: 10px;
-  background-clip: padding-box;
-  border: 2px solid transparent;
-}
-
-#nav_search_box::-webkit-scrollbar-track {
-  background-color: #ffc944;
-  border-radius: 10px;
-  box-shadow: inset 0px 0px 7px #ffc944;
-}
-
 #btn-list-items{
-  margin: 60px 50px 20px 165px;
+  margin: 100px 50px 20px 10px;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
 }
 
@@ -288,9 +269,9 @@
 #nav-mainbtn .btn{
   font-weight: 700;
   font-size: 20px;
-  width: 200px;
-  height: 90px;
-  margin:0 0 10px -10px ;
+  width: 100px;
+  height: 100px;
+  margin: 5px;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.25);
 }
 
@@ -391,6 +372,8 @@
   margin:10px;
   line-height: 150%;
   top: -13px;
+ 
+
 }
 
 .card-header {
@@ -405,7 +388,17 @@
   font-size: 14px;
 
 }
+.footer{
+  width:100%;
+  height:250px;
+  background-color: #ffc944;
+  
+}
 
+.text{
+  position:relative;
+  left:400px;
+}
 /* ///미디어 쿼리가 나가신다 길을 비껴라아/// */
 @media all and (min-width:381px) and (max-width:992px) {
   #sidebar{
@@ -425,8 +418,9 @@
 
 @media(min-width:381px){
   
+ 
   #case {
-    margin: 80px auto;
+    margin: 10px auto;
     width: 50%
 
   }
@@ -436,7 +430,12 @@
     margin: 3px auto;
 
   }
-  
+  .content button{
+    width: 200px;
+    height: 200px;
+    box-shadow: #333;
+    margin:20px 20px;
+  }
   #card_case{
     display:flex;
     width: 80%;
@@ -452,8 +451,9 @@
     font-size: small;
     }
   
+
   
-  
+    
 }
 
 
@@ -555,15 +555,9 @@ line-height: 25px;}
   display: flex;
 
 }
-.contentment button{
-  width: 70%;
-  height: 80px;
-  box-shadow: #333;
-  background-color: #fff;
-  border: #333 solid 1px;
-  margin:10px;
-}
 .home_btn svg{
+  left: 710px;
+  top: 550px;
   width:50px;
   height:50px;
 }
@@ -584,14 +578,6 @@ line-height: 25px;}
 
 .contents::-webkit-scrollbar {
     width: 15px;
-}
-.contentment button{
-  width: 70%;
-  height: 80px;
-  box-shadow: #333;
-  background-color: #fff;
-  border: #333 solid 1px;
-  margin:10px;
 }
 
 .dropdown {
@@ -651,8 +637,13 @@ line-height: 25px;}
   margin: 20px auto;
   text-align: center;
 }
-
-
+.contentment button{
+  width: 70%;
+  height: 20%;
+  box-shadow: #333;
+  margin-top:10px;
+  
+}
 .home_btn svg{
   left: 320px;
   top: 550px;
@@ -677,6 +668,13 @@ line-height: 25px;}
     margin: 0 auto;
     width: 150px;
   }
-  
+  #nav-mainbtn .btn{
+    font-weight: 700;
+    font-size: 25px;
+    width: 150px;
+    height: 150px;
+    margin: 5px ;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.25);
+  }
 
 }

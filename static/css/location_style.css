@@ -196,11 +196,13 @@ width: 20%;
     
 }
 
-#footer{
-    display: fixed;
+.footer {
     width: 100%;
-    bottom: 0;
-  }
+    height: 250px;
+    background-color: #ffc944;
+
+}
+
 
 .text {
     position: relative;
@@ -294,9 +296,6 @@ width: 20%;
         width: 100%;
         height: 100px;
         background-color: gray;
-        text-align: center;
-        line-height: 1.4;
-
     }
 
     .footer {
@@ -414,9 +413,6 @@ width: 20%;
         width: 100%;
         height: 100px;
         background-color: gray;
-        text-align: center;
-        line-height: 1.4;
-
     }
 
 

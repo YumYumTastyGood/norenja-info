@@ -452,7 +452,8 @@
 }
 
 #ad_wrap #ad_sss {
-  width:80%;
+
+  width:50%;
   height:auto;
   margin: auto;
   
@@ -583,7 +584,6 @@
 .card-footer-item {
   font-size: 15px;
   display: block;
-  padding: 0;
 
 }
 
@@ -627,11 +627,13 @@
 
 }
 
+
 #footer{
   display: fixed;
   width: 100%;
   bottom: 0;
 }
+
 /* ///미디어 쿼리가 나가신다 길을 비껴라아/// */
 @media all and (min-width:381px) and (max-width:992px) {
   #sidebar {
